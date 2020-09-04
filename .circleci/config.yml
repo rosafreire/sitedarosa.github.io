@@ -2,9 +2,9 @@ version: 2
 jobs:
   build:
     working_directory: ~/tmp
-    docker:
+    docker: 
+      - image: circleci/node:4.8.2
   
     steps:
       - checkout
-      - run: npm install
-      - run: test
+      - run: echo "Hello world"
